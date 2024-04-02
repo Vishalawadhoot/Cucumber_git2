@@ -37,15 +37,15 @@ public class LoginTest {
 		login.enterps();
 		login.clicksignbutton();
 	}
-//	@After(order=0)
-//	public void close_browser(Scenario scenario) {
-//		if (scenario.isFailed()) {
-//			TakesScreenshot ts = (TakesScreenshot) driver;
-//			byte[] src = ts.getScreenshotAs(OutputType.BYTES);
-//			scenario.attach(src, "image/png", "screenshot");
-//			
-//		}
-//	}
+	@After(order=0)
+	public void close_browser(Scenario scenario) {
+		if (scenario.isFailed()) {
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			byte[] src = ts.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(src, "image/png", "screenshot");
+			
+		}
+	}
 	@After(order=1)
 	public void teardown() {
 		driver.close();

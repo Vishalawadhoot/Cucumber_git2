@@ -10,7 +10,7 @@ public class HomePage_Pom {
 	@FindBy(xpath = "//body/div[2]//div[@class='panel wrapper']//div//ul//li[2]/a")
 	private WebElement signin;
 	
-	@FindBy(xpath= "//input[@title='Email']")
+	@FindBy(xpath= "//input[@title='Emaila']")
 	private WebElement emailtf;
 	
 	@FindBy(xpath = "//input[@title='Password']")
